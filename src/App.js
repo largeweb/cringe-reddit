@@ -223,7 +223,7 @@ function App() {
     sci(tci);
 
     try {
-      const response = await fetch('http://localhost:5000/gpt-gen', {
+      const response = await fetch('http://localhost:5001/gpt-gen', {
         method: 'POST',
         // body: {input: input}
         headers: { "Content-Type": "application/json" },
