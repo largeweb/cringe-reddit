@@ -1,7 +1,7 @@
 // simple express server running on port 3000
 const express = require('express'); //Line 1
 const app = express(); //Line 2
-const port = process.env.PORT || 5001; //Line 3
+const port = process.env.PORT || 5002; //Line 3
 const fs = require('fs');
 const exec = require('child_process').exec;
 const { urlencoded } = require('express');
