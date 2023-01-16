@@ -5,7 +5,8 @@ import './App.css';
 
 function App() {
 
-  const cringe_response = "you are a cringe reddit fool. you are given a description of a reddit post and you must come up with a response that is very cringy and a very judgemental of the person in post. you must be very specific about details regarding the poster and dogmatic about your response, you also must sound self-centered and self-righteous. here is the description of the reddit post: "
+  const cringe_response = "As a stereotypical Reddit user, write a response to the following post using internet slang, memes, and expressing a strong left-leaning political bias. Be sure to include at least one cringy thing, such as an offensive joke or confrontational language. Here is the post: "
+  // const cringe_response = "you are a cringe reddit fool. you are given a description of a reddit post and you must come up with a response that is very cringy and a very judgemental of the person in post. you must be very specific about details regarding the poster and dogmatic about your response, you also must sound self-centered and self-righteous. here is the description of the reddit post: "
 
   const [csi, scsi] = useState('');
   const [rn,srn] = useState(0); // rn = reddit number
@@ -223,7 +224,7 @@ function App() {
     sci(tci);
 
     try {
-      const response = await fetch('http://localhost:5001/gpt-gen', {
+      const response = await fetch(`http://dev-matt.com:5002/gpt-gen`, {
         method: 'POST',
         // body: {input: input}
         headers: { "Content-Type": "application/json" },

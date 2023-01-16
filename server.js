@@ -1,13 +1,13 @@
 // simple express server running on port 3000
 const express = require('express'); //Line 1
 const app = express(); //Line 2
-const port = process.env.PORT || 5002; //Line 3
 const fs = require('fs');
 const exec = require('child_process').exec;
 const { urlencoded } = require('express');
 const cors = require("cors");
 const dotenv = require('dotenv');
 dotenv.config();
+const port = process.env.PORT || 5000; //Line 3
 
 const OPENAI_API_KEY = process.env.API_KEY;
 
